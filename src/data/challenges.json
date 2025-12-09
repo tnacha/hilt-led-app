@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1",
+    "path": "Prompting & Refinement",
+    "type": "multiple-choice",
+    "title": "Challenge 1: Prompt Engineering Basics",
+    "description": "Identify the most effective prompt for a given scenario.",
+    "question": "Which of the following prompts is most likely to yield a high-quality, detailed response from an AI for generating a lesson plan on 'Introduction to Photosynthesis' for high school students?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write a lesson plan about photosynthesis.",
+        "isCorrect": false,
+        "feedback": "This prompt is too vague. It lacks specific details about the target audience, depth, and desired format, leading to a generic output."
+      },
+      {
+        "id": "b",
+        "text": "Create a detailed, engaging lesson plan for a 9th-grade biology class on 'Introduction to Photosynthesis'. Include learning objectives, a 15-minute introductory activity, key vocabulary, a 30-minute main activity with a hands-on experiment, and a 10-minute concluding assessment. Ensure the tone is appropriate for high school students and aligns with basic biological concepts.",
+        "isCorrect": true,
+        "feedback": "Excellent! This prompt is highly effective because it specifies the target audience, topic, desired length for each section, interaction type (hands-on experiment), and tone. This level of detail guides the AI to produce a relevant and high-quality lesson plan."
+      },
+      {
+        "id": "c",
+        "text": "Generate a lesson plan for photosynthesis, focusing on high school level. Make it good.",
+        "isCorrect": false,
+        "feedback": "While specifying 'high school level' is better, 'Make it good' is subjective and unhelpful. The prompt still lacks actionable details for the AI to produce a truly high-quality output."
+      },
+      {
+        "id": "d",
+        "text": "I need a lesson plan on photosynthesis for students. What should I include?",
+        "isCorrect": false,
+        "feedback": "This is a conversational query, not a prompt for generation. It asks the AI for guidance rather than instructing it to create content, which is not the goal of prompt engineering."
+      }
+    ],
+    "correctAnswerId": "b",
+    "conceptCard": {
+      "title": "Prompt Whisperer",
+      "content": "Effective prompt engineering involves providing clear, specific, and comprehensive instructions to an AI. Key elements include: defining the target audience, specifying the desired format and length, outlining key content points, setting the tone, and providing examples if necessary. Ambiguous or overly broad prompts lead to generic or irrelevant outputs. The more context and constraints you provide, the better the AI can align its output with your intentions."
+    }
+  },
+  {
+    "id": "2",
+    "path": "Bias & Ethics",
+    "type": "multiple-choice",
+    "title": "Challenge 2: Identifying Bias in AI Outputs",
+    "description": "Review AI-generated content and identify potential bias issues.",
+    "question": "An AI has generated the following example for a lesson on 'Career Paths in STEM': 'Engineers are typically logical thinkers who excel at math. Most successful engineers are men who enjoy working independently on technical problems.' What is the PRIMARY bias issue with this AI-generated content?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The content assumes all engineers work independently, ignoring collaborative aspects of engineering.",
+        "isCorrect": false,
+        "feedback": "While this is a valid concern about oversimplification, it's not the primary bias issue. The more critical problem relates to gender stereotyping."
+      },
+      {
+        "id": "b",
+        "text": "The content reinforces gender stereotypes by stating 'most successful engineers are men,' which perpetuates bias and may discourage female students from pursuing STEM careers.",
+        "isCorrect": true,
+        "feedback": "Correct! This statement reinforces harmful gender stereotypes that have historically excluded women from STEM fields. As a human in the loop, you must catch and correct such bias to create inclusive learning content that encourages all students, regardless of gender, to pursue their interests."
+      },
+      {
+        "id": "c",
+        "text": "The content doesn't mention enough specific STEM career options beyond engineering.",
+        "isCorrect": false,
+        "feedback": "While expanding career options could be beneficial, this isn't the primary bias concern. The gender stereotype is the most problematic element that needs immediate correction."
+      },
+      {
+        "id": "d",
+        "text": "The content focuses too much on math skills and not enough on creativity in engineering.",
+        "isCorrect": false,
+        "feedback": "Though a more balanced portrayal of engineering skills would be helpful, the gender bias ('most successful engineers are men') is the primary issue that could actively harm learners."
+      }
+    ],
+    "correctAnswerId": "b",
+    "conceptCard": {
+      "title": "Bias Buster",
+      "content": "AI models learn from historical data, which often contains societal biases related to gender, race, culture, and other factors. As a learning designer, your critical role is to identify and eliminate bias in AI-generated content. Key strategies include: questioning stereotypes, ensuring diverse representation, checking for exclusionary language, validating examples across different demographics, and actively rewriting biased content to be inclusive and accurate. Every piece of learning content should empower all learners equally."
+    }
+  },
+  {
+    "id": "3",
+    "path": "Scaffolding & Sequencing",
+    "type": "multiple-choice",
+    "title": "Challenge 3: Evaluating Learning Sequences",
+    "description": "Determine the most effective sequencing for a learning module.",
+    "question": "You're reviewing an AI-generated sequence for a module on 'Introduction to Data Analysis.' The AI suggests this order: 1) Advanced statistical methods, 2) What is data?, 3) Basic descriptive statistics, 4) Hands-on practice with datasets, 5) Data visualization techniques. What is the BEST way to resequence this content for effective learning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the sequence as-is; learners can figure out the basics from the advanced content.",
+        "isCorrect": false,
+        "feedback": "This violates fundamental learning design principles. Starting with advanced content before establishing foundational knowledge creates unnecessary cognitive load and frustration for learners."
+      },
+      {
+        "id": "b",
+        "text": "What is data? → Basic descriptive statistics → Data visualization techniques → Hands-on practice with datasets → Advanced statistical methods",
+        "isCorrect": true,
+        "feedback": "Excellent! This sequence follows proper scaffolding principles: it starts with foundational concepts (what is data), builds to basic skills (descriptive statistics), introduces visualization for understanding patterns, provides hands-on practice to reinforce learning, and finally advances to complex methods once learners have the necessary foundation. Each step builds logically on the previous one."
+      },
+      {
+        "id": "c",
+        "text": "Hands-on practice with datasets → What is data? → Advanced statistical methods → Basic descriptive statistics → Data visualization techniques",
+        "isCorrect": false,
+        "feedback": "Starting with hands-on practice before establishing conceptual understanding can overwhelm learners. While experiential learning is valuable, learners need foundational knowledge first to make sense of what they're doing."
+      },
+      {
+        "id": "d",
+        "text": "Advanced statistical methods → Data visualization techniques → Basic descriptive statistics → What is data? → Hands-on practice",
+        "isCorrect": false,
+        "feedback": "This is backwards scaffolding. Moving from complex to simple violates the zone of proximal development—learners need foundational knowledge before they can understand advanced concepts."
+      }
+    ],
+    "correctAnswerId": "b",
+    "conceptCard": {
+      "title": "Scaffold Master",
+      "content": "Effective scaffolding sequences learning from simple to complex, building each new concept on previously mastered foundations. Key principles include: start with concrete foundational concepts before abstract ones, provide graduated complexity, ensure each step is within the learner's zone of proximal development, integrate practice opportunities after introducing new skills, and sequence content to minimize cognitive load. AI may generate content in random order—your role is to structure it for optimal learning progression."
+    }
+  },
+  {
+    "id": "4",
+    "path": "Assessment Quality",
+    "type": "multiple-choice",
+    "title": "Challenge 4: Evaluating Assessment Validity",
+    "description": "Review an AI-generated assessment for quality and alignment.",
+    "question": "An AI has created this assessment question for a lesson on 'Critical Thinking Skills': 'Who is considered the father of modern critical thinking? A) John Dewey, B) Edward de Bono, C) Richard Paul, D) Benjamin Bloom.' What is the PRIMARY problem with this assessment item?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The question has too many answer choices, making it confusing for learners.",
+        "isCorrect": false,
+        "feedback": "Four options is standard for multiple-choice questions. The number of choices isn't the issue here—the problem is with what's being assessed."
+      },
+      {
+        "id": "b",
+        "text": "The question tests recall of trivia rather than assessing whether learners can actually apply critical thinking skills, failing to align with the learning objective.",
+        "isCorrect": true,
+        "feedback": "Exactly right! This question only measures memorization of a fact, not the ability to think critically. A valid assessment for critical thinking would require learners to analyze arguments, evaluate evidence, identify assumptions, or solve problems—demonstrating the actual skill. As the human in the loop, you must ensure assessments measure what they claim to measure, not just surface-level recall."
+      },
+      {
+        "id": "c",
+        "text": "The question doesn't provide enough context about each person listed in the answer choices.",
+        "isCorrect": false,
+        "feedback": "While additional context could be helpful, the core issue is that the question doesn't assess critical thinking at all—it only tests factual recall, which doesn't align with the learning objective."
+      },
+      {
+        "id": "d",
+        "text": "The question should include an 'All of the above' option for completeness.",
+        "isCorrect": false,
+        "feedback": "'All of the above' options can be problematic in assessments. However, the main issue here is that the question tests memorization instead of the higher-order critical thinking skills that should be the focus."
+      }
+    ],
+    "correctAnswerId": "b",
+    "conceptCard": {
+      "title": "Assessment Architect",
+      "content": "High-quality assessments must align with learning objectives and measure what they claim to measure (validity). AI often generates questions that test recall when higher-order thinking is needed. Key principles: ensure assessment items match the cognitive level of the objective (remember, understand, apply, analyze, evaluate, create), avoid assessing trivial facts when skills are the goal, provide appropriate scaffolding, ensure questions are clear and unambiguous, and verify that incorrect options (distractors) are plausible but clearly wrong. Your expertise ensures assessments truly measure learning."
+    }
+  }
+]
